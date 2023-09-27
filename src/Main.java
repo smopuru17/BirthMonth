@@ -1,17 +1,56 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
-public class Main {
-    public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        int month = 0;
+        int intTrash = 0;
+        String trash = "";
+        System.out.print("Please enter your birthday number: ");
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        if (in.hasNextInt()) {
+            month = in.nextInt();
+            if (month == 1) {
+                System.out.println("Your birthday month is January ");
+            } else if (month == 2) {
+                System.out.println("Your birthday month is February ");
+            } else if (month == 3) {
+                System.out.println("Your birthday month is March ");
+            } else if (month == 4) {
+                System.out.println("Your birthday month is April ");
+            } else if (month == 5) {
+                System.out.println("Your birthday month is May ");
+            } else if (month == 6) {
+                System.out.println("Your birthday month is June ");
+            } else if (month == 7) {
+                System.out.println("Your birthday month is July ");
+        }  else if (month == 8) {
+                 System.out.println("Your birthday month is August ");
+        }  else if (month == 9) {
+            System.out.println("Your birthday month is September ");
+        }  else if (month == 10) {
+            System.out.println("Your birthday month is October");
+            }  else if (month == 11) {
+                System.out.println("Your birthday month is November");
+            }  else if (month == 12){
+                    System.out.println("Your birthday month is December");
+                } else {
+                System.out.println("You entered an incorrect month value: " + month);
+            }
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+                        }
+
+
+
+
+
+        else {
+                trash = in.nextLine();
+                System.out.println("You entered an incorrect month value: " + trash);
+            }
+
+
         }
     }
-}
+
